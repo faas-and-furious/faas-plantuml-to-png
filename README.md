@@ -23,7 +23,7 @@ Run the push.sh script in terminal
 Deploy the function using faas-cli by running the command below
 
 ```sh
-faas-cli deploy --gateway http://docker.local:8080 --image rprakashg/faas-plantuml-to-png --name plantuml-to-png
+faas-cli deploy --gateway http://docker.local:8080 --image tmobile/faas-plantuml-to-png --name plantuml-to-png
 ```
 
 ## Testing the function
