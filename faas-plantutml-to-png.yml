@@ -1,0 +1,10 @@
+provider:
+  name: faas
+  gateway: http://docker.local:8080  # can be a remote server
+
+functions:
+  plantuml-to-png:
+    lang: Dockerfile
+    handler: ./plantuml-to-png
+    image: tmobile/faas-plantuml-to-png:latest
+
