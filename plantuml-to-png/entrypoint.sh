@@ -1,9 +1,9 @@
 #!/bin/sh
 
-export nano=`date +%s%N`
+export file=`date +%s%N`
 
-cat - > ./$nano.txt
+cat - > ./$file.txt
 
-java -jar /app/plantuml.jar $nano.txt 
+java -jar /app/plantuml.jar $file.txt 
 
-cat $nano.png > /dev/stdout
+cat $file.png > /dev/stdout
