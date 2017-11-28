@@ -42,7 +42,7 @@ Alice <-- Bob: another authentication Response
 @enduml
 ```
 
-Run the curl command below
+Run the command below
 
 ```sh
 
