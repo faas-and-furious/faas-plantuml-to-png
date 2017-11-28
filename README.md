@@ -23,7 +23,9 @@ Run the push.sh script in terminal
 Deploy the function using faas-cli by running the command below
 
 ```sh
-faas-cli deploy --gateway http://docker.local:8080 --image tmobile/faas-plantuml-to-png --name plantuml-to-png
+
+faas-cli deploy -f https://raw.githubusercontent.com/tmobile/faas-plantuml-to-png/master/faas-plantutml-to-png.yml  --gateway http://docker.local:8080
+
 ```
 
 ## Testing the function
@@ -43,5 +45,7 @@ Alice <-- Bob: another authentication Response
 Run the curl command below
 
 ```sh
-curl -X POST --data-binary @"sample.txt" http://docker.local:8080/function/plantuml-to-png > sample.png
+
+cat sample.txt| faas-cli invoke plantuml-to-png > out.png
+
 ```
