@@ -30,7 +30,7 @@ faas-cli deploy -f https://raw.githubusercontent.com/tmobile/faas-plantuml-to-pn
 
 ## Testing the function
 
-Use the sample plantUML below and create a sample.txt file
+Use the sample plantUML below and create a sample.uml file. You can also use the sample.uml file that is in this repo.
 
 ```text
 @startuml
@@ -46,6 +46,6 @@ Run the command below
 
 ```sh
 
-cat sample.txt| faas-cli invoke plantuml-to-png > out.png
+cat sample.uml | faas-cli invoke plantuml-to-png > out.png
 
 ```
